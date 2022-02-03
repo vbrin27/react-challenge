@@ -36,6 +36,7 @@ Make sure to keep consistent with:
 - How you design the look of the application
 - How you use the API
 - How you write your function and name your variables. Comments are welcome.
+- How often you commit and how you write your commit descriptions.
 
 ## Deliverables
 1. The application should be fully working with no console errors
@@ -54,9 +55,3 @@ The search should be performant. Don't make a request on each keystroke and use 
 
 
 If you need design inspiration look at the following website: https://booking.holmesplace.ch/en
-
-
-## Submitting the Project
-Make sure you commit often and with proper descriptions.
-
-When you're ready to submit your project, make sure you open a PR on the original project repository
