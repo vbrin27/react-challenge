@@ -12,3 +12,7 @@ for(var i = 0; i < 5; i ++){
 }
 
 // CODE YOUR SOLUTION BELOW
+for(var i = 0; i < 5; i ++){
+    let value = i;
+	setTimeout(() => console.log(value))
+}

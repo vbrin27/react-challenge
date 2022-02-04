@@ -27,3 +27,12 @@ const fakeAPI = async () => {
 }
 
 // CODE YOUR SOLUTION BELOW
+
+async function getCachedData(cache, key){
+    let value = cache[key];
+    if(value === undefined){
+        value = await fakeAPI(key);
+        cache[key] = value;
+    }
+    return value;
+}

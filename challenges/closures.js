@@ -20,3 +20,9 @@ const data = {
 }
 
 // CODE YOUR SOLUTION BELOW
+
+function extractText(data){
+    return (key)=>{
+        return data[key];
+    }
+}

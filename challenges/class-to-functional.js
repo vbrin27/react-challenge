@@ -10,14 +10,16 @@ export default class MyApp extends React.Component(){
 	}
 
 	increaseCounter(){
-		this.setState((previousState) => { counter: previousState.counter + 1})
+		this.setState((previousState) => {
+            return { counter: previousState.counter + 1}
+        })
 	}
 
 	render(){
 		return(
             <>
 			<h1>{this.state.counter}</h1>
-			<button onClick={this.increaseCounter}>Increment</button>
+			<button onClick={this.increaseCounter.bind(this)}>Increment</button>
             </>
 		)
 	}
@@ -25,3 +27,19 @@ export default class MyApp extends React.Component(){
 }
 
 // CODE YOUR SOLUTION BELOW
+
+function CounterFunctionApp() {
+    let [counter, setCounter] = useState(0);
+    let style = {
+      background:"blue"
+    }
+    let increaseCounter = ()=>{
+      setCounter(counter+1);
+    };
+  
+    return(
+      <>
+        <h1>{counter}</h1>
+        <button style={style} onClick={increaseCounter}>Increment</button>
+      </>)
+  }
